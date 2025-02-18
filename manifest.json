@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "AlgoMeter AI: Big O Insights for LeetCode",
+  "version": "1.0",
+  "description": "Gets the value from LeetCode's Monaco Editor and logs it to console",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["https://*.leetcode.com/*"],
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://*.leetcode.com/*"],
+      "js": ["content.js"],
+      "all_frames": true
+    }
+  ],
+
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
