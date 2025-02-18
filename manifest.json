@@ -2,8 +2,8 @@
   "manifest_version": 3,
   "name": "AlgoMeter AI: Big O Insights for LeetCode",
   "version": "1.0",
-  "description": "Gets the value from LeetCode's Monaco Editor and logs it to console",
-  "permissions": ["activeTab", "scripting", "storage"],
+  "description": "Get the Big O notation of your LeetCode code. Time and space complexity analysis using AI.",
+  "permissions": ["activeTab", "storage"],
   "host_permissions": ["https://*.leetcode.com/*"],
 
   "action": {
